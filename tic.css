@@ -1,0 +1,72 @@
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f0f0f0;
+}
+
+.container {
+  text-align: center;
+}
+
+h1 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.board {
+  display: grid;
+  grid-template-columns: repeat(3, 100px);
+  gap: 5px;
+  justify-content: center;
+}
+
+.cell {
+  width: 100px;
+  height: 100px;
+  background-color: #a57c47;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 36px;
+  color: #fff;
+  border: 2px solid #5d4037;
+  cursor: pointer;
+}
+
+button {
+  margin: 10px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+.hidden {
+  display: none;
+}
+
+#winner-popup {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  padding: 20px;
+  border: 2px solid #ccc;
+  text-align: center;
+  z-index: 1000;
+}
+
+#winner-popup button {
+  margin-top: 10px;
+}
